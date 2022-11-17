@@ -1,0 +1,105 @@
+.job-box {
+  padding: 2.5rem 3rem;
+  background-color: white;
+  border-radius: 0.4rem;
+  box-shadow: 0 15px 15px -8px rgba(91, 164, 164, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.company-name {
+  font-weight: 700;
+  color: #5ba4a4;
+  display: inline-block;
+  margin: 0 1.5rem 1.4rem 0;
+}
+
+.new.yes,
+.featured.yes {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  display: inline-block;
+  padding: 0.6rem 0.6rem 0.3rem 0.7rem;
+  border-radius: 10rem;
+}
+
+.new.yes {
+  background-color: #5ba4a4;
+  margin-right: 1rem;
+}
+
+.featured.yes {
+  background-color: black;
+}
+
+.position {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.position:hover {
+  color: #5ba4a4;
+}
+
+.more-info {
+  font-size: 1.5rem;
+  color: #7b8e8e;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.tags {
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.tags p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #5ba4a4;
+  background-color: #eef6f6;
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tags p:hover {
+  color: #eef6f6;
+  background-color: #5ba4a4;
+}
+
+@media (max-width: 57em) {
+  .job-box {
+    border-radius: 0.6rem;
+    flex-direction: column;
+  }
+
+  .company {
+    text-align: center;
+  }
+
+  .tags {
+    margin: 0;
+    border-top: 1px solid #7b8e8e;
+    padding-top: 1.5rem;
+  }
+}
+
+@media (max-width: 23.44em) {
+  .job-box {
+    align-items: start;
+  }
+
+  .company {
+    text-align: left;
+  }
+}

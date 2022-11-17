@@ -1,13 +1,52 @@
-body {
+*,
+::before,
+::after {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.6rem;
+  background-color: #effafa;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+.bordered {
+  border-left: 0.4rem solid #5ba4a4;
+}
+
+.hidden {
+  display: none;
+}
+
+.invisible {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 57em) {
+  .bordered {
+    border-left: 0.6rem solid #5ba4a4;
+  }
+}
+
+@media (max-width: 23.44em) {
+  img {
+    width: 5rem;
+    margin-top: -5rem;
+  }
 }

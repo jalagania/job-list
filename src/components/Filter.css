@@ -1,0 +1,73 @@
+.filter-box {
+  min-height: 6rem;
+  padding: 1.5rem 3rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 15px 15px -8px rgba(91, 164, 164, 0.5);
+  margin-bottom: 3.5rem;
+  transition: all ease-in-out 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.tag-box {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.keyword-box {
+  display: flex;
+}
+
+.keyword-box p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #5ba4a4;
+  background-color: #eef6f6;
+  padding: 0.8rem;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+
+.keyword-box span {
+  background-color: #5ba4a4;
+  padding: 0.8rem;
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+}
+
+.keyword-box span:hover {
+  background-color: black;
+}
+
+.keyword-box svg {
+  pointer-events: none;
+}
+
+.clear {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.clear:hover {
+  color: #5ba4a4;
+  text-decoration: underline;
+}
+
+@media (max-width: 23.44em) {
+  .filter-box {
+    margin: 0;
+  }
+}

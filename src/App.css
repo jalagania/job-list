@@ -30,4 +30,9 @@ main {
   .container {
     gap: 4.5rem;
   }
+
+  .job-list {
+    margin-top: 6rem;
+    gap: 5rem;
+  }
 }
